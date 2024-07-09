@@ -25,6 +25,9 @@ urlpatterns = [
     # path('set_cookie/<str:key>/<str:value>/', views.set_cookie),
     # path('set_session/<str:key>/<str:value>/', views.set_session),
     path('addtocart/<str:type>/<int:id>/', views.addtocart),
+    path('addtocart/<str:type>/', views.addtocart),
     path('cart/', views.cart),
+    path('cartorder/', views.cartorder),
+    path('cartok/', views.cartok),
 ]
  

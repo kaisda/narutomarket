@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>訂單已完成</title>
+<style>
+    .cartok {
+        background-image: url("/static/images/page/bg_image.png");
+        margin-bottom: -10px;
+    }
+</style>
+{% endblock%}
+{% block content %}
+<div class="cartok text-light">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-12 col-md-6">
+                <img src="/static/images/page/nin_w.png" alt="" style="width:80%;">
+            </div>
+            <div class="col-12 col-md-6 pb-3">
+                <h2>訂購成功</h2>
+                <p></p>
+                <h3>{{customername}} , 您所選取的商品已訂購成功, 我們會盡速且祕密的送至您指定的地點, 感謝您的支持, 歡迎隨時回來 !</h3>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}
