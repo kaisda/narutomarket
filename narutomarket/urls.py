@@ -21,6 +21,7 @@ from myapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', views.index),
+    path('', views.index),
     path('detail/<int:id>/', views.detail),
     # path('set_cookie/<str:key>/<str:value>/', views.set_cookie),
     # path('set_session/<str:key>/<str:value>/', views.set_session),
